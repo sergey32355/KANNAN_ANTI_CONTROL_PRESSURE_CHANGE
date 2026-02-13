@@ -931,7 +931,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             #**************************************************************************************************                
 
             # Bayes gradient -classical approach
-            if(self.control_algotithm_name=="Determenistic"):#type(self.Algorithm)==Bayes_Control_2):                
+            if(self.control_algotithm_name=="Stochastic"):#type(self.Algorithm)==Bayes_Control_2):                
                 next_point = self.Algorithm.optimizer.suggest()                
                 target = self.Target_Bayes_Control_1(**next_point,wait_other_thread=False)          
                 try:                    
