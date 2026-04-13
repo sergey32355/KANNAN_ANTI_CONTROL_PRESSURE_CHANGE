@@ -146,10 +146,7 @@ class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def BrowsRealTimeFolderClick(self):
         selected_directory = QFileDialog.getExistingDirectory(self, "Select Directory")
         self.lineEdit_real_time_folder.setText(selected_directory)       
-        self.Summator_real_time_folder_browse=self.lineEdit_real_time_folder.text()
-        self.label_5.setText("Loading Etalons ...")
-        self.label_5_ethalons_label.setStyleSheet("background-color:#e9d700")
-        self.statusbar.setStyleSheet("background-color:#e9d700")
+        self.Summator_real_time_folder_browse=self.lineEdit_real_time_folder.text()        
     
     def SummatorFunction(self,x,y,
                          summator_type="Laplacian_kernel",
